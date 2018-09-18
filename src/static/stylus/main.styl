@@ -1,4 +1,4 @@
-html, body
+html, body, h1
   margin 0
   padding 0
 
@@ -14,7 +14,48 @@ body
     height 150px
 
   .header
+    position relative
     height 680px
+
+    .plate
+      position absolute
+      top 50px
+      left 30px
+
+      img
+        height 420px
+        width 420px
+
+    .bg_block
+      position absolute
+      left 50%
+      margin-left -380px
+      width 760px
+      height inherit
+      background #2D3A4B
+      z-index 2
+
+      .under_header
+        position absolute
+        top 210px
+        left 165px
+        width 665px
+        height 340px
+        z-index 3
+        background linear-gradient(to bottom, #000, #999)
+
+      .header_text
+        position absolute
+        top 125px
+        width 100%
+        z-index 4
+        text-align center
+
+        h1
+          color white
+          text-transform uppercase
+          font-size 140px
+
 
   .t_block
     height 680px
