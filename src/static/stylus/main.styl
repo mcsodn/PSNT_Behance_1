@@ -1,5 +1,3 @@
-@import "fonts.styl"
-
 html, body, h1
   margin 0
   padding 0
@@ -19,7 +17,20 @@ body
     position relative
     height 680px
 
-    .plate
+    .header__text
+      position absolute
+      top 125px
+      width 100%
+      z-index 4
+      text-align center
+
+      h1
+        font-family News Cycle
+        font-size 140px
+        color white
+        text-transform uppercase
+
+    .header__backimage
       position absolute
       top 50px
       left 30px
@@ -28,7 +39,7 @@ body
         height 420px
         width 420px
 
-    .bg_block
+    .header__content
       position absolute
       left 50%
       margin-left -380px
@@ -37,7 +48,7 @@ body
       background #2D3A4B
       z-index 2
 
-      .under_header
+      .header__innerblock
         position absolute
         top 210px
         left 165px
@@ -45,21 +56,23 @@ body
         height 340px
         z-index 3
         color white
-        background linear-gradient(to bottom, #000, #999)
+        background linear-gradient(to bottom,rgba(100,100,100,0.75),rgba(80,80,80,0.75))
 
-      .header_text
-        position absolute
-        top 125px
-        width 100%
-        z-index 4
-        text-align center
-
-        h1
-          font-family News Cycle
-          font-size 140px
-          color white
+        .preheader
+          display inline-block
+          margin 125px 125px 0px 125px
+          padding-bottom 35px
+          border-bottom 1px solid white
+          font 21px News Cycle
           text-transform uppercase
 
+        .text_block
+          display inline-block
+          margin 35px 125px 0px 125px
+          width 360px
+
+          p
+            margin 0
 
   .t_block
     height 680px
@@ -68,4 +81,5 @@ body
   .bottom
     height 80px
 
+@import "fonts.styl"
 @import "libs.styl"
