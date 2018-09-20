@@ -17,7 +17,7 @@ body
     position relative
     height 680px
 
-    .header__text
+    &__text
       position absolute
       top 125px
       width 100%
@@ -30,7 +30,7 @@ body
         color white
         text-transform uppercase
 
-    .header__backimage
+    &__backimage
       position absolute
       top 50px
       left 30px
@@ -39,16 +39,17 @@ body
         height 420px
         width 420px
 
-    .header__content
+    &__content
       position absolute
       left 50%
       margin-left -380px
       width 760px
       height inherit
       background #2D3A4B
+      box-shadow 0 0 50px rgba(122,122,122,0.75)
       z-index 2
 
-      .header__innerblock
+      &__innerblock
         position absolute
         top 210px
         left 165px
@@ -56,7 +57,8 @@ body
         height 340px
         z-index 3
         color white
-        background linear-gradient(to bottom,rgba(100,100,100,0.75),rgba(80,80,80,0.75))
+        box-shadow 0 0 100px rgba(0,0,0,0.35)
+        background linear-gradient(to bottom,rgba(100,100,100,0.75),rgba(80,80,80,0.85))
 
         .preheader
           display inline-block
@@ -75,8 +77,52 @@ body
             margin 0
 
   .t_block
-    height 680px
-    background #2D3A4B
+    position relative
+    height 830px
+
+    &__backimage
+      position absolute
+      top 350px
+      left 30px
+
+      img
+        height 400px
+        width 400px
+
+    &__backblock
+      position absolute
+      left 50%
+      margin-left -380px
+      width 760px
+      height inherit
+      background #2D3A4B
+      box-shadow 0 0 50px rgba(122,122,122,0.75)
+      z-index 2
+
+      &__innerblock
+        position absolute
+        top 170px
+        left -70px
+        width 960px
+        height 500px
+        z-index 3
+        background rgba(205, 209, 94,0.95)
+
+    &__content
+      position absolute
+      top 170px
+      left 125px
+      width 475px
+      height 400px
+      z-index 4
+      background white
+
+    &__faceimage
+      position absolute
+      top 140px
+      left 600px
+      z-index 5
+
 
   .bottom
     height 80px
