@@ -5,6 +5,17 @@ html, body, h1
 body
   background linear-gradient(to right, #D6DDE4, #D6DBE0)
 
+.blue_block
+  position absolute
+  top 150px
+  left 50%
+  width 760px
+  margin-left -(@width/2)
+  height 2900px
+  z-index 2
+  background #2D3A4B
+  box-shadow 0 0 50px rgba(122,122,122,0.75)
+
 .content
   width 1280px
   margin 0 auto
@@ -45,9 +56,6 @@ body
       margin-left -380px
       width 760px
       height inherit
-      background #2D3A4B
-      box-shadow 0 0 50px rgba(122,122,122,0.75)
-      z-index 2
 
       &__innerblock
         position absolute
@@ -95,8 +103,6 @@ body
       margin-left -380px
       width 760px
       height inherit
-      background #2D3A4B
-      box-shadow 0 0 50px rgba(122,122,122,0.75)
       z-index 2
 
       &__innerblock
