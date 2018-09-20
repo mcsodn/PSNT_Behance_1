@@ -1,3 +1,7 @@
+//COLORS
+YELLOW_BG = rgba(205,209,94,0.95)
+RED_BG = rgba(229, 79, 65,0.95)
+
 html, body, h1
   margin 0
   padding 0
@@ -86,49 +90,78 @@ body
 
   .t_block
     position relative
-    height 830px
+    height 880px
 
     &__backimage
       position absolute
-      top 350px
-      left 30px
+
+      &_leftside
+        top 350px
+        left 30px
+
+      &_rightside
+        top 420px
+        left 820px
 
       img
         height 400px
         width 400px
 
-    &__backblock
+    &__innerblock
       position absolute
-      left 50%
-      margin-left -380px
-      width 760px
-      height inherit
-      z-index 2
+      width 960px
+      height 500px
+      z-index 3
 
-      &__innerblock
-        position absolute
+      &_yellow
         top 170px
-        left -70px
-        width 960px
-        height 500px
-        z-index 3
-        background rgba(205, 209, 94,0.95)
+        left 190px
+        background YELLOW_BG
+
+      &_red
+        top 170px
+        left 125px
+        background RED_BG
+
 
     &__content
       position absolute
-      top 170px
-      left 125px
-      width 475px
       height 400px
       z-index 4
       background white
 
+      &_width475
+        top 170px
+        left 125px
+        width 475px
+
+      &_width450
+        top 335px
+        left 190px
+        width 450px
+        z-index 6
+
     &__faceimage
       position absolute
-      top 140px
-      left 600px
       z-index 5
 
+      &_smallpic
+        top 140px
+        left 600px
+
+      &_widepic
+        top 240px
+        left 360px
+
+    &__hr
+      position absolute
+      left 50%
+      bottom 0px
+      z-index 5
+      width 120px
+      margin-left -(@width/2)
+      height 4px
+      background-color #3A4656
 
   .bottom
     height 80px
