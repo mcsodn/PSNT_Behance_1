@@ -1,13 +1,14 @@
 //COLORS
 YELLOW_BG = rgba(205,209,94,0.95)
 RED_BG = rgba(229, 79, 65,0.95)
+OLIVE_BG = 	rgba(171, 126, 94,0.95)
 
 html, body, h1
   margin 0
   padding 0
 
 body
-  background linear-gradient(to right, #D6DDE4, #D6DBE0)
+  background linear-gradient(to right, #E3E7EC, #D3DBE4)
 
 .blue_block
   position absolute
@@ -15,7 +16,7 @@ body
   left 50%
   width 760px
   margin-left -(@width/2)
-  height 2900px
+  height 3500px
   z-index 2
   background #2D3A4B
   box-shadow 0 0 50px rgba(122,122,122,0.75)
@@ -123,6 +124,10 @@ body
         left 125px
         background RED_BG
 
+      &_olive
+        top 170px
+        left 190px
+        background OLIVE_BG
 
     &__content
       position absolute
@@ -164,7 +169,7 @@ body
       background-color #3A4656
 
   .bottom
-    height 80px
+    height 400px
 
 @import "fonts.styl"
 @import "libs.styl"
