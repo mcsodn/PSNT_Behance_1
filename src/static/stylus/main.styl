@@ -1,13 +1,16 @@
 //COLORS
-YELLOW_BG = rgba(205,209,94,.95)
+YELLOW_BG = rgba(197, 203, 70,.95)
 RED_BG = rgba(229,79, 65,.95)
 OLIVE_BG = 	rgba(171,126,94,.95)
+LIGHT_ORANGE_TXT = rgb(214, 165, 147)
+CYAN_BLUE_TXT = rgb(105, 125, 136)
 
 //FONTS
 MAIN_FONT = Bebas Neue
 
 //SHADOWS
-MAIN_SHADOW = 0 0 100px rgba(0,0,0,.7)
+LIGHT_SHADOW = 0 0 100px rgba(0,0,0,.2)
+HARD_SHADOW = 5px 20px 75px rgba(0,0,0,.45)
 
 html, body, h1
   margin 0
@@ -90,7 +93,7 @@ body
         height 340px
         z-index 3
         color white
-        box-shadow MAIN_SHADOW
+        box-shadow LIGHT_SHADOW
         background linear-gradient(to bottom,rgba(89, 105, 118,.8),rgba(75,88,99,.9))
 
         .preheader__wrap
@@ -142,7 +145,7 @@ body
       width 960px
       height 500px
       z-index 3
-      box-shadow MAIN_SHADOW
+      box-shadow LIGHT_SHADOW
 
       &_yellow
         top 170px
@@ -162,9 +165,11 @@ body
     &__content
       position absolute
       height 400px
+      padding-top 20px
       z-index 4
       background white
-      box-shadow MAIN_SHADOW
+      box-shadow HARD_SHADOW
+      text-align center
 
       &_width475
         top 170px
@@ -177,10 +182,54 @@ body
         width 450px
         z-index 6
 
+      &__hr-line
+        margin 0 auto
+
+        &_olive
+          border 0
+          border-bottom 1px solid LIGHT_ORANGE_TXT
+
+        &_cyan-blue
+          color CYAN_BLUE_TXT
+
+        &_340px
+          margin 10px auto
+          width 340px
+
+        &_290px
+          width 290px
+          margin 5px auto
+
+        &_240px
+          width 240px
+
+      h2
+        margin-top 50px
+        margin-bottom 30px
+        font-size 16pt
+        color LIGHT_ORANGE_TXT
+        text-transform uppercase
+
+      h3
+        margin-top 6px
+        margin-bottom 4px
+        font-size 34pt
+        font-family "Bebas Neue"
+        color CYAN_BLUE_TXT
+        text-transform uppercase
+        letter-spacing 12px
+        margin-right -(@letter-spacing)
+
+      p
+        color CYAN_BLUE_TXT
+        padding 10px 110px 20px
+        font-size 15px
+        line-height 2
+
     &__faceimage
       position absolute
       z-index 5
-      box-shadow MAIN_SHADOW
+      box-shadow HARD_SHADOW
 
       &_smallpic
         top 140px
