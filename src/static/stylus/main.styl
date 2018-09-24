@@ -1,10 +1,13 @@
 //COLORS
-YELLOW_BG = rgba(205,209,94,0.95)
-RED_BG = rgba(229, 79, 65,0.95)
-OLIVE_BG = 	rgba(171, 126, 94,0.95)
+YELLOW_BG = rgba(205,209,94,.95)
+RED_BG = rgba(229,79, 65,.95)
+OLIVE_BG = 	rgba(171,126,94,.95)
 
 //FONTS
 MAIN_FONT = Bebas Neue
+
+//SHADOWS
+MAIN_SHADOW = 0 0 100px rgba(0,0,0,.7)
 
 html, body, h1
   margin 0
@@ -87,7 +90,7 @@ body
         height 340px
         z-index 3
         color white
-        box-shadow 0 0 100px rgba(0,0,0,0.35)
+        box-shadow MAIN_SHADOW
         background linear-gradient(to bottom,rgba(89, 105, 118,.8),rgba(75,88,99,.9))
 
         .preheader__wrap
@@ -139,6 +142,7 @@ body
       width 960px
       height 500px
       z-index 3
+      box-shadow MAIN_SHADOW
 
       &_yellow
         top 170px
@@ -160,6 +164,7 @@ body
       height 400px
       z-index 4
       background white
+      box-shadow MAIN_SHADOW
 
       &_width475
         top 170px
@@ -175,6 +180,7 @@ body
     &__faceimage
       position absolute
       z-index 5
+      box-shadow MAIN_SHADOW
 
       &_smallpic
         top 140px
