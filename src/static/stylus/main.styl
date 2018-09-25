@@ -7,6 +7,8 @@ CYAN_BLUE_TXT = rgb(105, 125, 136)
 
 //FONTS
 MAIN_FONT = Bebas Neue
+SERIF_FONT = Lora
+//SERIF_FONT = Georgia
 
 //SHADOWS
 LIGHT_SHADOW = 0 0 100px rgba(0,0,0,.2)
@@ -115,8 +117,8 @@ body
 
           p
             margin 0
+            font-family SERIF_FONT
             font-size 15px
-            font-weight 100
             letter-spacing .015em
             line-height 2
             text-shadow rgba(0,0,0,.25) 0 0 .5em
@@ -187,10 +189,11 @@ body
 
         &_olive
           border 0
-          border-bottom 1px solid LIGHT_ORANGE_TXT
+          border-bottom 1.5px solid rgba(LIGHT_ORANGE_TXT,.4)
 
         &_cyan-blue
-          color CYAN_BLUE_TXT
+          border 0
+          border-bottom 1.5px solid rgba(CYAN_BLUE_TXT,.4)
 
         &_340px
           margin 10px auto
@@ -221,6 +224,7 @@ body
         margin-right -(@letter-spacing)
 
       p
+        font-family SERIF_FONT
         color CYAN_BLUE_TXT
         padding 10px 110px 20px
         font-size 15px
@@ -263,6 +267,15 @@ body
       color white
       box-shadow 0 0 100px rgba(0,0,0,0.35)
       background linear-gradient(to bottom,rgba(100,100,100,0.75),rgba(80,80,80,0.85))
+
+      &__text
+        width max-content
+        margin 60px auto
+        font 34px "Bebas Neue"
+        text-align center
+        text-transform uppercase
+        letter-spacing 6px
+
 
 @import "fonts.styl"
 @import "libs.styl"
